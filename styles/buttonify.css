@@ -1,0 +1,62 @@
+.bty {
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #3f51b5;
+	color: #fff;
+	cursor: pointer;
+	font-size: 20px;
+	outline: none;
+	transition: .2s;
+}
+
+.bty:hover {
+	background-color: #3445a5;
+}
+
+.sm {
+	padding: 5px;
+	font-size: 16px;
+	border-radius: 7px;
+}
+
+.md {
+
+}
+
+.lg {
+	padding: 13px;
+	font-size: 26px;
+}
+
+.info {
+	background-color: #009688d1;
+}
+
+.info:hover {
+	background-color: #009688;
+}
+
+.danger {
+	background-color: #ff0000;
+}
+
+.danger:hover {
+	background-color: #c53025;
+}
+
+.success {
+	background-color: #008000;
+}
+
+.success:hover {
+	background-color: #006400;
+}
+
+.medium {
+	background-color: #ffa500;
+}
+
+.medium:hover {
+	background-color: #ff8c00;
+}

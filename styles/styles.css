@@ -1,0 +1,167 @@
+body {
+	background-color: #fff;
+	padding: 0px;
+	margin: 0px;
+	font-family: Kristen ITC;
+	overflow-x: hidden; 
+}
+
+h1 {
+	font-family: sans-serif;
+}
+
+/**The Header**/
+
+header {
+	background-color: #fff;
+	display: inline-flex;
+	min-width: 100%;
+	border-top: 3px solid #ff9800;
+	padding: 0px 0px 30px 20px;
+	height: 30px;
+	box-shadow: 0px -8px 11px 4px;
+}
+
+header h1 {
+	height: fit-content;
+	margin-top: 10px;
+}
+
+p, code, span {
+	line-height: 2;
+}
+
+header nav {
+	margin-left: 15%;
+	font-size: 14px;
+	height: fit-content;
+	margin-top: 2px;
+}
+
+header nav ul {
+	display: inline-flex;
+	list-style: none;
+	
+}
+
+header nav ul li {
+	margin: 0px 10px 0px 10px;
+	width: 100px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	transition: ease-in .1s;
+	position: relative;
+}
+
+header nav ul li::after {
+	content: '';
+	width: 0px;
+	background-color: #ff9800;
+	height: 4px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transition: .3s;
+}
+
+header nav ul li.active::after {
+	width: 100%;
+	left: 0;
+}
+
+header nav ul li:hover {
+	cursor: pointer;
+}
+
+header nav ul li:hover::after {
+	width: 100%;
+	left: 0;
+}
+
+/**The main content wrapper**/
+
+.main {
+	width: 100%;
+	display: inline-flex;
+	padding: 30px;
+
+}
+
+/**The left part of the main content**/
+
+.left {
+	width: 60%;
+	font-family: cursive;
+}
+
+/**The Right part of the main content, the scrollspy**/
+
+.right {
+	background-color: #ff6600bf;
+	width: 30%;
+	text-align: center;
+	float: right;
+	height: 60%;
+	color: #fff;
+	border-radius: 10px;
+	margin-left: 15px;
+}
+
+.division {
+	width: 80%;
+	height: .1px;
+	border: .5px solid #fff;
+}
+
+.scrollspy {
+	list-style-type: none;
+	text-align: left;
+}
+
+.scrollspy li {
+	padding: 10px;
+}
+
+.scrollspy li a {
+	text-decoration: none;
+	color: #fff
+}
+
+.scrollspy li a:hover {
+	border-bottom: 2px solid #fff;
+}
+
+/**The remaining part of the left side, main content**/
+h1.line-under {
+	position: relative;
+	width: fit-content;
+}
+
+h1.line-under::after {
+	content: '';
+	width: 60%;
+	height: 3px;
+	background-color: #111;
+	position: absolute;
+	left: 30%;
+	bottom: 0;
+}
+span.within {
+	font-family: monospace;
+	color: #ff9800;
+	font-weight: bolder;
+	font-size: 20px;
+	background-color: #1d1b1b26;
+	border-radius: 3px;
+	padding: 2px;
+
+}
+
+span.code {
+	background-color: #1d1b1b26;
+	width: 90%;
+	height: 50px;
+	overflow-x: scroll;
+	font-family: monospace;
+}
+
