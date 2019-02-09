@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
 	<title>buttons.css</title>
 	<link rel="icon" href="images/logo.ico">
@@ -16,18 +16,19 @@
 		<nav>
 			<ul>
 				<li class="active">Overview</li>
-				<li>How to use</li>
-				<li>Contribute</li>
-				<li>Other Projects</li>
+				<li><a href="contribute.html">Contribute</a></li>
+				<li><a href="complains.html">Complains?</a></li>
+				<li><a href="other-projects.html">Other Projects</a></li>
 			</ul>
 		</nav>
 	</header>
 
+<!--main container for the site-->
 	<div class="main">
 		<div class="left">
-
+<!--left side with main content of the site-->
 			<div class="overview" id="overview">
-				<h1 class="line-under">Overview</h1>
+				<h1 class="line-under">How to use</h1>
 				<p><strong>Buttonify.css</strong> is a simple <strong>CSS Library</strong> with lots of helper classes to help you style your buttons easily. You can even add pseudo-effects to your buttons by simply adding classes... </p>
 				<p>To use it in your webpages, you have to download the <span class="within">buttonify.css</span> or <span class="within">buttonify.min.css</span> (the compressed version) and include it in your webpages</p>
 				<pre><code data-language="html"><link rel="stylesheet" href="buttonify.css" type="text/css">
@@ -41,7 +42,7 @@
 					<button class="bty">Buttonify</button>
 				</p>
 			</div>
-
+<!--container for button sizes-->
 			<div class="sizes" id="sizes">
 				<h1 class="line-under">Sizes</h1>
 				<p>You can specify the sizes of the buttons by adding the classes <span class="within">.sm</span> for small sized buttons, <span class="within">.md</span> for medium sized buttons, <span class="within">.lg</span> for large sized buttons</p>
@@ -57,15 +58,16 @@
 				</p>
 				<p>the default size when no size is specified is the medium size <span class="within">.bty-md</span></p>
 			</div>
-
+<!--container for button colors-->
 			<div class="colors" id="colors">
 				<h1 class="line-under">Colors</h1>
-				<p>You can specify the colors for the buttons. There are 5 colors which can be specified for the buttons, <span class="within">primary</span> gives a light blue color, <span class="within">info</span> gives this greenish-blue color, <span class="within">danger</span> gives red color, <span class="within">success</span> gives a green color, and <span class="within">medium</span> gives an orange color</p>
+				<p>You can specify the colors for the buttons. There are 6 colors which can be specified for the buttons, <span class="within">.primary</span> gives a light blue color, <span class="within">.info</span> gives this greenish-blue color, <span class="within">.danger</span> gives red color, <span class="within">.success</span> gives a green color, and <span class="within">.medium</span> gives an orange color, <span class="within">.trans</span> gives a button with transparent background</p>
 				<pre><code data-language="html"><button class="bty primary">.bty primary</button>
 <button class="bty info">.bty info</button>
 <button class="bty danger">.bty danger</button>
 <button class="bty success">.bty success</button>
 <button class="bty medium">.bty medium</button>
+<button class="bty trans">.bty trans</button>
 </code></pre>
 			<p>will provide the following result:</p>
 			<p class="demo">
@@ -74,7 +76,115 @@
 				<button class="bty danger">.bty danger</button>
 				<button class="bty success">.bty success</button>
 				<button class="bty medium">.bty medium</button>
+				<button class="bty trans">.bty trans</button>
 			</p>
+			</div>
+<!--container for button shapes-->
+			<div class="shapes" id="shapes">
+				<h1 class="line-under">Shapes</h1>
+				<p>You can also specify the shapes of the buttons which are as follows: <span class="within">.circle</span> which gives a perfectly rounded button, <span class="within">.rect</span> give a rectangle shaped button, <span class="within">.norm</span> gives the normal default button with an average border-radius, and <span class="within">.curved</span> gives a button with greater border-radius</p>
+				<pre><code data-language="html"><button class="bty circle">.bty circle</button>
+<button class="bty rect">.bty rect</button>
+<button class="bty norm">.bty norm</button>
+<button class="bty curved">.bty curved</button>
+</code></pre>
+			<p>will provide the following result:</p>
+			<p class="demo">
+				<button class="bty circle">.bty circle</button>
+				<button class="bty rect">.bty rect</button>
+				<button class="bty norm">.bty norm</button>
+				<button class="bty curved">.bty curved</button>
+			</p>
+			</div>
+<!--container for button dropdowns-->
+			<div class="dropdowns" id="dropdowns">
+				<h1 class="line-under">Dropdowns</h1>
+				<p>adding the following classes will provide different types of dropdowns accordingly: <span class="within">.dropclick</span> will provide a button that will produce a dropdown when clicked, <span class="within">.drophover</span> will provide a button that will display a dropdown when hovered</p>
+				<pre><code data-language="html"><button class="bty dropclick">.bty dropclick</button>
+<button class="bty drophover">.bty drophover</button>
+</code></pre>
+				<p>will provide the following result:</p>
+				<p class="demo">
+					<button class="bty dropclick">.bty dropclick</button>
+					<button class="bty drophover">.bty drophover</button>
+				</p>
+			</div>
+<!--container for button pseudo effects-->
+			<div class="pseudo" id="pseudo">
+				<h1 class="line-under">Pseudo-Effects</h1>
+				<p>Here is a table with examples on the various pseudo-effects you can add to your buttons:</p>
+<!--table for button pseudo effects examples-->
+				<table class="pseudo" cellspacing="0" cellpadding="10">
+					<tr class="top">
+						<td class="class-in-table">Class</td>
+						<td class="code-in-table">Code</td>
+						<td class="result-in-table">Result</td>
+					</tr>
+					<tr>
+						<td>.btyh basic</td>
+						<td class=""><pre><code data-language="html"><button class="btyh basic">.btyh</button></code></pre></td>
+						<td><button class="btyh basic">.btyh basic</button></td>
+					</tr>
+<!--row for left-right animations-->
+					<tr class="striped">
+						<td>.btyh l-r</td>
+						<td class=""><pre><code data-language="html"><button class="btyh l-r">.btyh l-r</button></code></pre></td>
+						<td><button class="btyh l-r">.btyh l-r</button></td>
+					</tr>
+<!--row for right-left animations-->
+					<tr>
+						<td>.btyh r-l</td>
+						<td class=""><pre><code data-language="html"><button class="btyh r-l">.btyh r-l</button></code></pre></td>
+						<td><button class="btyh r-l">.btyh r-l</button></td>
+					</tr>
+<!--row for top-bottom animations-->
+					<tr class="striped">
+						<td>.btyh t-b</td>
+						<td class=""><pre><code data-language="html"><button class="btyh t-b">.btyh t-b</button></code></pre></td>
+						<td><button class="btyh t-b">.btyh t-b</button></td>
+					</tr>
+<!--row for bottom-top animations-->
+					<tr>
+						<td>.btyh b-t</td>
+						<td class=""><pre><code data-language="html"><button class="btyh b-t">.btyh b-t</button></code></pre></td>
+						<td><button class="btyh b-t">.btyh b-t</button></td>
+					</tr>
+
+					<tr>
+						<td>.btyh sl-sr</td>
+						<td class=""><pre><code data-language="html"><button class="btyh sl-sr">.btyh sl-sr</button></code></pre></td>
+						<td><button class="btyh sl-sr">.btyh sl-sr</button></td>
+					</tr>
+					<tr class="striped">
+						<td>.btyh sr-sl</td>
+						<td class=""><pre><code data-language="html"><button class="btyh sr-sl">.btyh sr-sl</button></code></pre></td>
+						<td><button class="btyh sr-sl">.btyh sr-sl</button></td>
+					</tr>
+<!--row for center-out animations-->
+					<tr>
+						<td>.btyh c-o</td>
+						<td class=""><pre><code data-language="html"><button class="btyh c-o">.btyh c-o</button></code></pre></td>
+						<td><button class="btyh c-o">.btyh c-o</button></td>
+					</tr>
+					<tr class="striped">
+						<td>.btyh sc-so</td>
+						<td class=""><pre><code data-language="html"><button class="btyh sc-so">.btyh sc-so</button></code></pre></td>
+						<td><button class="btyh sc-so">.btyh sc-so</button></td>
+					</tr>
+
+					<tr>
+						<td>.btyh br-bl</td>
+						<td class=""><pre><code data-language="html"><button class="btyh br-bl">.btyh br-bl</button></code></pre></td>
+						<td><button class="btyh br-bl">.btyh br-bl</button></td>
+					</tr>
+					<tr class="striped">
+						<td>.btyh bl-br</td>
+						<td class=""><pre><code data-language="html"><button class="btyh bl-br">.btyh bl-br</button></code></pre></td>
+						<td><button class="btyh bl-br">.btyh bl-br</button></td>
+					</tr>
+					
+				
+				</table>
 			</div>
 
 
@@ -93,11 +203,11 @@
 			<h2>Buttonify.css</h2>
 			<hr class="division">
 			<ul class="scrollspy">
-				<li><a href="#overview">Overview</a></li>
+				<li><a href="#overview">How to use</a></li>
 				<li><a href="#sizes">Button Sizes</a></li>
 				<li><a href="#colors">Button Colors</a></li>
 				<li><a href="#shapes">Button Shapes</a></li>
-				<li><a href="#borders">Button Borders</a></li>
+				<li><a href="#borders">Button Dropdowns</a></li>
 				<li><a href="#pseudo">Button Pseudo-Effects</a></li>
 			</ul>
 		</div>
@@ -109,7 +219,11 @@
 
 
 
-
+<footer>
+	<p>fb | Twit | INs | You</p>
+	<p>Copyright Creators 2019</p>
+</footer>
 
 <script src="js/rainbow.min.js"></script>
+<script src="js/site-reacts.js"></script>
 </body>
